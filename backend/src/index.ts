@@ -7,7 +7,7 @@ app.use("*", cors());
 
 app.get('/', (c) => {
   return c.text('Hello Hono!')
-})
+}) 
 
 const port = 3999
 console.log(`Server is running on port ${port}`)
