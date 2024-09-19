@@ -1,5 +1,13 @@
-function student() {
-    return <h2>Jeg er student</h2>
-  }
+type studentProps = {
+  id: string;
+  name: string;
+}
 
-  export default student;
+export default function Student(props: studentProps) {
+  const { id, name } = props;
+  return (
+    <div>
+      <p id="class-student">{name}</p>
+    </div>
+  );
+}
